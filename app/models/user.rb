@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :rooms, dependent: :destroy
+  has_many :rooms
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   has_one :profile
